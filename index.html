@@ -33,24 +33,39 @@ blah, blah, blah, blah
 
 
 <script> //begins the Java Script for the variables and functions//
-        var allergy_count = 0; //creates variable for allergy so that when clicked, it will be recognized the function allergy count//
-        var cold_count = 0; //creates variable for cold so that when clicked, it will be recognized for the function cold count//
+        var genz_count = 0; //creates variable for gen z so that when clicked, it will be recognized the function gen z count//
+        var millennial_count = 0; //creates variable for millenial so that when clicked, it will be recognized for the function millennial count//
+	var genx_count = 0; //creates variable for gen x so that when clicked, it will be recognized for the function gen x count//
+	var boomer_count = 0; //creates variable for boomer so that when clicked it will be recognized for the function gen x count//
 
 
-        function allergyAdd(){ //begins function for allergy count up//
-            allergy_count = allergy_count + 1; //when answer is chosen that correlates with allergy, it will add one to allergy//
-		alert(allergy_count); //pop-up box will show up that counts the allergy count//
+        function genzAdd(){ //begins function for gen z count up//
+            genz_count = genz_count + 1; //when answer is chosen that correlates with genz, it will add one to genz//
+		alert(genz_count); //pop-up box will show up that counts the genz count//
         }
-
-        function coldAdd(){ //begins function for cold count up//
-            cold_count = cold_count + 1; //when answer is chosen that correlates with cold, it will add one to cold//
-		alert(cold_count); //pop-up box will show up that counts the cold count//
+	
+	function genzAdd(){ //begins function for millennial count up//
+            millennial_count = millennial_count + 1; //when answer is chosen that correlates with millennial, it will add one to millennial//
+		alert(millennial_count); //pop-up box will show up that counts the millennial count//
+	}
+	
+	function genxAdd(){ //begins function for gen x count up//
+            genx_count = genx_count + 1; //when answer is chosen that correlates with genx, it will add one to genx//
+		alert(genx_count); //pop-up box will show up that counts the genx count//
         }
+	
+	function boomerAdd(){ //begins function for boomer count up//
+            boomer_count = boomer_count + 1; //when answer is chosen that correlates with boomer, it will add one to boomer//
+		alert(boomer_count); //pop-up box will show up that counts the boomer count//
+	}
+	
 	function seeResults(){ //begins function for seeResults//
-	var allergyPercent= allergy_count/6*100 //variable for allergy percent//
-	var coldPercent= cold_count/6*100 //variable for cold percent//
+	var genzPercent= genz_count/6*100 //variable for genz percent//
+	var millennialPercent= millennial_count/6*100 //variable for millennial percent//
+	var genxPercent= genx_count/6*100 //variable for genx percent//
+	var boomerPercent= cold_count/6*100 //variable for boomer percent//
 	var ResultText = document.getElementById("Results"); //variable for formula  Result Text//
-		ResultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; //formula for finding the probability//
+		ResultText.innerHTML = "Probability you are a Gen Z =" + genzPercent + "<br> Probability you are a Millennial =" + millennialPercent + "<br> Probability you are a Gen X=" + genxpercent + "<br> Probabilty you are a Boomer=" boomerpercent; //formula for finding the probability//
 	}
 
   </script> <!--ends JavaScript-->
@@ -70,7 +85,7 @@ blah, blah, blah, blah
     left: -100vw;
     overflow-y: auto;
     z-index: 0;
-    background-color: hsl(0,0%,100%);
+    background-color: LightGray;
 }
 
   .page:target {
