@@ -97,39 +97,41 @@ blah, blah, blah, blah
 <body> <!--begins the body of the pages-->
 	
 <div id="header" class="w3-container w3-flat-peter-river"> <!--begins the header and color at top of page-->
-	<h1>Cold or Allergies?</h1> <!--formats heading at top pf page-->
+	<h1>Are you a Gen Z, Millennial, Gen X, or... a BOOMER??</h1> <!--formats heading at top pf page-->
 </div><!--ends the header-->
 	
-<div id="content" class="w3-container w3-lightgray"><!--begins content of page-->
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p><!--text in body-->
+<div id="content" class="w3-container w3-clouds"><!--begins content of page-->
+	<p>Despite your age, this quiz can accurately guess if you are a Gen Z, Millennial, Gen X, or even a Boomer! Answer a few questions to see if your opinions/knowledge match your generation! </p><!--text in body-->
 	
-	<a href="#one" class="w3-btn w3-black w3-round"> Get Started </a><!--creates button labeled get started that goes to page 1-->
+	<a href="#one" class="w3-btn w3-pink w3-round"> Click Here to Start! </a><!--creates button labeled get started that goes to page 1-->
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p><!--creates paragraph with this text-->
+	<p>THIS CODE SHOULD NOT BE USED TO IDENTIFY YOUR GENERATION, YOUR BIRTH DATE WILL.</p><!--creates paragraph with this text-->
 
 <div class="page" id="one"> <!-- begins page 1 -->
-	<div id="header" class="w3-container w3-flat-carrot"><!--formats the header and color at top of page-->
+	<div id="header" class="w3-container w3-flat-peter-river"><!--formats the header and color at top of page-->
 		<h1>Question 1</h1> <!-- labeled question 1--> 
 	</div><!--ends header-->
 	
     	<div id="content" class="w3-container"><!--begins content-->
-        <p>Are your eyes watery or itchy?</p>  <!--text for question 1 -->
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--if clicked yes, it will add to allergy count and move to page 2-->
-		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a><!--if clicked no, it will add to cold count and move to page 2-->
+        <p>What is your ideal job?</p>  <!--text for question 1 -->
+		<a href="#two" onclick="genzAdd();" class="w3-btn w3-black"> Doing something I love while making good money as well </a> <!--if clicked, it will add to genz count and move to page 2-->
+		<a href="#two"  onclick="millennialAdd();" class="w3-btn w3-black"> Doing something I love despite the pay </a><!--if clicked, it will add to millennial count and move to page 2-->
+		<a href="#two"  onclick="genxAdd();" class="w3-btn w3-black">Working somewhere where I am also allowed to have a life outside of work</a><!--if clicked, it will add to genx count and move to page 2-->
+		<a href="#two"  onclick="boomerAdd();" class="w3-btn w3-black">Working hard at a job no matter the time commitment</a><!--if clicked, it will add to boomer count and move to page 2-->
     	</div><!--ends content-->
 </div><!--ends page 1-->
 
 <div class="page" id="two"><!-- begins page 2--> 
-	<div id="header" class="w3-container w3-flat-carrot"><!--formats the header and color at top of page-->
+	<div id="header" class="w3-container w3-flat-peter-river"><!--formats the header and color at top of page-->
 		<h1>Question 2</h1><!-- labeled question 2--> 
 	</div><!--ends header-->
 	
 	<div id="content" class="w3-container"><!--begins content-->
-		<p>Do you have a fever?</p><!--text for question 2-->
-		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes</a><!--if clicked yes, it will add to cold count and move to page 3-->
-		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> No</a><!--if clicked no, it will add to allergy count and move to page 3-->
+		<p>Did you attend college right after high school or later in life?</p><!--text for question 2-->
+		<a href="#three" onclick="genzAdd(); millennialAdd();" class="w3-btn w3-black"> Yes</a><!--if clicked yes, it will add to both genz and millennial count and move to page 3-->
+		<a href="#three" onclick="genxAdd(); boomerAdd();" class="w3-btn w3-black"> No</a><!--if clicked no, it will add to both genx and boomer count and move to page 3-->
 	</div><!--ends content-->
 </div><!--ends page 2-->
 	
@@ -193,7 +195,7 @@ blah, blah, blah, blah
 	</div><!--ends the content for results page-->
 </div><!--ends page 7-->
 
-<footer class="w3-bottom w3-flat-peter-river"> <!--begins footer-->
+<footer class="w3-bottom w3-container w3-flat-peter-river"> <!--begins footer-->
 	<p>DIY!</p> <!--text in footer-->
 </footer><!--ends footer-->
 	   
