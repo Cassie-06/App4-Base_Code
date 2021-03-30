@@ -66,7 +66,7 @@ It can be more accurate, this was made for fun
 	var genxPercent= genx_count/7*100 //variable for genx percent//
 	var boomerPercent= boomer_count/7*100 //variable for boomer percent//
 	var ResultText = document.getElementById("Results"); //variable for formula  Result Text//
-		ResultText.innerHTML = "Probability you are a Gen Z =" + genzPercent + "<br> Probability you are a Millennial =" + millennialPercent + "<br> Probability you are a Gen X=" + genxPercent + "<br> Probabilty you are a Boomer=" + boomerPercent; //formula for finding the probability//
+		ResultText.innerHTML = "Probability you are a Gen Z =" + Math.round(genzPercent) + "<br> Probability you are a Millennial =" + Math.round(millennialPercent) + "<br> Probability you are a Gen X=" + Math.round(genxPercent) + "<br> Probabilty you are a Boomer=" + Math.round(boomerPercent); //formula for finding the probability//
 	}
 
   </script> <!--ends JavaScript-->
